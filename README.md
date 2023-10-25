@@ -7,7 +7,8 @@ When a programmer builds a software, it is not guaranteed that this software wil
 
 Code Conventions improve the readability of the software. It allows engineers to understand new code more quickly and thoroughly.
 
-
+<br>
+<br>
 # Chapter - 2: File Names
     1. Java source code is generally saved with the .java suffix.
     2. Java bytecode is generally saved with the **.class** suffix.
@@ -16,7 +17,8 @@ Code Conventions improve the readability of the software. It allows engineers to
 
 
 
-
+<br>
+<br>
 # Chapter - 3: Indentation
 Four spaces should be used as the unit of indentation. So, indentation will take place in 4 spaces, 8 spaces etc. It means multiple of 4. But the exact construction of the indentation is unspecified.
 
