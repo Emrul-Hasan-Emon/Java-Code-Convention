@@ -56,6 +56,14 @@ Another question arises when we will break a line? It means we know the length o
         - longName5) + 4 * longname6
   
     Try to avoid this. Instead do the line breaking outside the parentheses. It will make the code readable.
+- There are three ways to format ternary expressions.
+
+        1. alpha = (aLongBooleanExpression) ? beta : gamma;
+        2. alpha = (aLongBooleanExpression) ? beta
+        		: gamma;
+        3. alpha = (aLongBooleanExpression)
+        		? beta
+        		: gamma;
 
 
 
