@@ -26,6 +26,31 @@ Another question arises when we will break a line? It means we know the length o
 - We can break before an operator
 - Prefer higher level breaks to lower level breaks.
 - When we break an expression, we must align the new line with the beginning of the expression at the same level on the previous line.
+- For the previous four rules, if the rules lead to confusing code, at that time we will indent 8 spaces to the right. For example, if we do indentation like below, this may lead to confusion.
+
+    var = someMethod1(longExpression1,
+          someMethod2(longExpression2,
+          longExpression3));
+
+  Instead of this we can do the following,
+    var = someMethod1(longExpression1,
+                someMethod2(longExpression2,
+                        longExpression3));
+
+  We can take another example for a method,
+
+    someMethod(int anArg, Object anotherArg, String yetAnotherArg, Object andStillAnother) {
+    	Implementation of the method
+    }
+
+  This convention is okay. But if we think that it may make us confused at that time we can use 8 spaces indentation for the second line and more 8 spaces indentation for the third line. And obviously 
+  indentation will take place to the right.
+
+    someMethod(int anArg, Object anotherArg, String   
+    yetAnotherArg, Object andStillAnother) { 
+    ...
+    }
+
 
 
 
