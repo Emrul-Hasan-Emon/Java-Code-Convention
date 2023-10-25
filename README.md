@@ -62,8 +62,8 @@ Another question arises when we will break a line? It means we know the length o
         2. alpha = (aLongBooleanExpression) ? beta
            : gamma;
         3. alpha = (aLongBooleanExpression)
-           ? beta
-           : gamma;
+                 ? beta
+                 : gamma;
 
 
 
