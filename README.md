@@ -51,8 +51,10 @@ Another question arises when we will break a line? It means we know the length o
         ...
         }
 - Never do the line breaking inside a parenthesis. For example,
+  
         longName1 = longName2 * (longName3 + longName4
-        - longName5) + 4 * longname6;
+        - longName5) + 4 * longname6
+  
     Try to avoid this. Instead do the line breaking outside the parentheses. It will make the code readable.
 
 
