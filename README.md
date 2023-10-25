@@ -78,6 +78,7 @@ Another question arises when we will break a line? It means we know the length o
 
 # Chapter - 4: Comments
 Comments should be used to give overviews of code and provide some information about code which are not present in the code. Comments should be written in such a way that a programmer can understand. Comments should contain only information which is relevant to reading and understanding the program. For example, if a comment is made which describes how a portion works, it is not a good practice. Comment will not show how a specific portion of code works, instead it will show what is doing. Also frequency of comments is a matter. Comments should not include special characters such as form-feed and backspace. There are two types of comments present in Java.
+
   **1. Implementation Comment**
        It means commenting out of code or the comments about a particular implementation which is a part of a method or class. Actually there may be some comments which don't give an overview as whole 
        but give overview for a specific portion. That’s why these comments are placed inside the class or the method. THa  They are delimited by `/*......*/`.
