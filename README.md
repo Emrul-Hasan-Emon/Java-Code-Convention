@@ -79,6 +79,38 @@ Another question arises when we will break a line? It means we know the length o
 # Chapter - 4: Comments
 Comments should be used to give overviews of code and provide some information about code which are not present in the code. Comments should be written in such a way that a programmer can understand. Comments should contain only information which is relevant to reading and understanding the program. For example, if a comment is made which describes how a portion works, it is not a good practice. Comment will not show how a specific portion of code works, instead it will show what is doing. Also frequency of comments is a matter. Comments should not include special characters such as form-feed and backspace. There are two types of comments present in Java.
 
-- Implementation Comment
-   It means commenting out of code or the comments about a particular implementation which is a part of a method or class. Actually there may be some comments which don't give an overview as whole 
-       but give overview for a specific portion. That’s why these comments are placed inside the class or the method. THa  They are delimited by `/*......*/`.
+- **Implementation Comment** <br>
+       It means commenting out of code or the comments about a particular implementation which is a part of a method or class. Actually there may be some comments which don't give an overview as whole 
+       but give overview for a specific portion. That’s why these comments are placed inside the class or the method. THa  They are delimited by `/*......*/`. <br><br>
+  **Implementation comment is of four types.**
+  - **Block Comments** <br>
+     Specifically block comments are used to provide descriptions of files, methods, data structure and algorithms. Block comments may be used at the beginning of each file and before each method. Block comments also be used within methods and when they are used within a method they should be indented at the same level as the code.
+  - **Single Line Comments** <br>
+  Short comments can be done on a single line indented the level of the following. If short comments go out more than one line, at that time block comments should be used instead of single line comments.
+
+          if (condition) {/* Handle the condition. */
+          ...
+          }
+  - **Trailing Comments** <br>
+   Very short comments can be used in the same line as the code. Note that the comments should be very short. If they become long, at that time it will be considered as single line comments. If more 
+   than. one short comment appears in a chunk of code, they should all be indented to the same tab settings.
+
+        if (a == 2) {return TRUE;            /* special case */
+        } else {
+            return isPrime(a);      /* works only for odd a */
+        }
+  - **End-Of-Line Comments.** <br>
+   For this type of comments the used delimiter is //. This is done while commenting out a complete line. It means we have done coding. Now we want to uncomment a line. At that time we will use End- 
+   Of_Line commenting. But if we want to use it for text it will not be appropriate. But if we want to use it for commenting multiple lines which are part of the code at that time we can do it.
+
+        //if (bar > 1) {
+        //
+        //    // Do a triple-flip.
+        //    ...
+        //}
+        //else {
+        //    return false;
+        //}
+- **Documentation Comment** <br>
+It is also known as doc comment also. Doc comments are meant to describe the specification of the code, from an implementation-free perspective. Doc comments describe the whole overview of a class or a method or a constructor. That’s why these types of comments are placed before the class declaration, before the method declaration, before the constructor declaration. It describes Java classes, interfaces, methods, constructors and fields.
+They are delimited by `/**.....*/`.
