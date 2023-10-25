@@ -114,3 +114,25 @@ Comments should be used to give overviews of code and provide some information a
 - **Documentation Comment** <br>
 It is also known as doc comment also. Doc comments are meant to describe the specification of the code, from an implementation-free perspective. Doc comments describe the whole overview of a class or a method or a constructor. That’s why these types of comments are placed before the class declaration, before the method declaration, before the constructor declaration. It describes Java classes, interfaces, methods, constructors and fields.
 They are delimited by `/**.....*/`.
+
+        /**
+        
+         * The Example class provides ...
+         */
+        public class Example { ...
+  
+  The first line of doc comment /** for classes and interfaces is not indented but subsequent doc comment lines each have 1 space of indentation. And generally members of a class or a interface have 4 spaces indentation.So, doc comment for 
+  members including constructors have spaces for the first doc comment which is /** and 1 space more, total 5 spaces thereafter. <br>
+  **Note:** Doc comment should not be done inside a method or a constructor definition block.
+
+<br>
+<br>
+
+# Chapter - 5: File Organization
+
+A file consists of several lines. But the good way is to keep the number of lines in a file within 2000. <br>
+  ## Java Source File <br>
+  Each of the java source files is ended with .java suffix. Each of the java source files contains a single public class or interface. But if there are private classes and interfaces are present which are associated with a public, we can put them 
+  in the same source file where the public class is present. At that time public class should appear at the top. Same thing can happen for an interface. There may be classes or interfaces which are associated with a public interface. Then we can 
+  put them in the same source file where the public interface is present. At that time the public interface should appear at the top. <br>
+  
