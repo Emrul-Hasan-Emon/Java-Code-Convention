@@ -9,10 +9,10 @@ Code Conventions improve the readability of the software. It allows engineers to
 
 # Chapter - 2: File Names
 <ol>
-  Java source code is generally saved with the .java suffix.
-  Java bytecode is generally saved with the .class suffix.
-  For makefiles, gnumake is used to build software.
-  README consists of text which summarises the contents of a particular directory.
+  <li>Java source code is generally saved with the .java suffix.</li>
+  <li>Java bytecode is generally saved with the .class suffix.</li>
+  <li>For makefiles, gnumake is used to build software.</li>
+  <li>README consists of text which summarises the contents of a particular directory.</li>
 </ol>
 
 
