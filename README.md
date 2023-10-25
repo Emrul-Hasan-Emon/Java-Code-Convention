@@ -8,7 +8,7 @@ When a programmer builds a software, it is not guaranteed that this software wil
 **Code Conventions improve the readability of the software. It allows engineers to understand new code more quickly and thoroughly.**
 
 # Chapter - 2: File Names
-    1. Java source code is generally saved with the **.java** suffix.
+    1. Java source code is generally saved with the .java suffix.
     2. Java bytecode is generally saved with the **.class** suffix.
     3. For makefiles, gnumake is used to build software.
     4. README consists of text which summarises the contents of a particular directory.
@@ -32,24 +32,28 @@ Another question arises when we will break a line? It means we know the length o
               someMethod2(longExpression2,
               longExpression3));
 
-  Instead of this we can do the following,
+    Instead of this we can do the following,
         var = someMethod1(longExpression1,
                     someMethod2(longExpression2,
                             longExpression3));
 
-  We can take another example for a method,
+    We can take another example for a method,
 
         someMethod(int anArg, Object anotherArg, String yetAnotherArg, Object andStillAnother) {
         	Implementation of the method
         }
 
-  This convention is okay. But if we think that it may make us confused at that time we can use 8 spaces indentation for the second line and more 8 spaces indentation for the third line. And obviously 
-  indentation will take place to the right.
+    This convention is okay. But if we think that it may make us confused at that time we can use 8 spaces indentation for the second line and more 8 spaces indentation for the third line. And obviously 
+    indentation will take place to the right.
 
         someMethod(int anArg, Object anotherArg, String   
         yetAnotherArg, Object andStillAnother) { 
         ...
         }
+- Never do the line breaking inside a parenthesis. For example,
+        longName1 = longName2 * (longName3 + longName4
+        - longName5) + 4 * longname6;
+    Try to avoid this. Instead do the line breaking outside the parentheses. It will make the code readable.
 
 
 
